@@ -1,6 +1,10 @@
 package env
 
-import "github.com/astaxie/beego"
+import (
+	"fmt"
+
+	"github.com/astaxie/beego"
+)
 
 // RunEnvInit 环境
 func RunEnvInit() {
@@ -8,4 +12,6 @@ func RunEnvInit() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println(err)
 }
