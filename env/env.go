@@ -1,8 +1,6 @@
 package env
 
 import (
-	"fmt"
-
 	"github.com/astaxie/beego"
 )
 
@@ -13,5 +11,4 @@ func RunEnvInit() {
 		panic(err)
 	}
 
-	fmt.Println(err)
 }
